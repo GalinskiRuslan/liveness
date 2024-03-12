@@ -1,0 +1,22 @@
+.btn {
+  z-index: 1;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border-radius: 50%;
+  padding: 5px;
+  transition: transform 0.2s;
+  background: none;
+  border: none;
+}
+
+.btn:active:not(:disabled) {
+  transform: scale(0.9);
+}
+
+@media (max-width: 768px) {
+  .btn {
+    top: 10px;
+    right: 10px;
+  }
+}
